@@ -19,7 +19,7 @@ OPERATORIAI:
 - matematiniai:
     - aritmetiniai: +, -, /, *, %(liekana), **(kelimas laipsniu)
     - aritmetiniai priskyrimo: +=, -=, /=, *=, %=, **=
-
+    - aritmetiniai: ++(kintamaji padidina vienu vienetu), --(mazina vienetu) 
 */
 
 console.log(1);
@@ -165,4 +165,50 @@ console.log(k);
 
 k **= 2;
 console.log(k);
+
+console.clear();
+
+let i = 0;
+console.log(i);
+
+i = i + 7;
+console.log(i);
+
+i = i + 7;
+console.log(i);
+
+i += 7;        // vietoj '= i +' lieka '+='
+console.log(i);
+
+i++;
+console.log(i); // 22
+
+i++;
+console.log(i); // 23
+
+
+
+console.log(`------p-------------`);
+// didinimas po loginimo:
+let p = 0;
+console.log(p);
+console.log(p++); // logina - 0, bet minty padidintas 1
+console.log(p++); // logina - 1, bet minty padidintas 2
+console.log(p++); // logina - 2, bet minty padidintas 3
+console.log(p++); // logina - 3, bet minty padidintas 4
+console.log(p++); // logina - 4, bet minty padidintas 5
+console.log(p); // logina - 5
+
+
+console.log(`------r-------------`);
+// didinimas pries loginima:
+let r = 0;
+console.log(r);
+console.log(++r); // 1
+console.log(++r); // 2
+console.log(++r); // 3
+console.log(++r); // 4
+console.log(++r); // 5
+
+// !! negalima (++p-- ++p++ --p-- --p++) dvigubu
 

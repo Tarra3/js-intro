@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "for": "node --watch ./loops/for.js",
     "sort": "node --watch ./methods/sort.js",
     "filter": "node --watch ./methods/filter.js",
     "map": "node --watch ./methods/map.js",

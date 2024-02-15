@@ -10,7 +10,7 @@ Busimos temos:
     + tekstas
     + logines reiksmes
     + undefined
-    - sarasas
+    + sarasas
     - objektas
 - salygos (if)
     + if

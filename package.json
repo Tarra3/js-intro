@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "sort": "node --watch ./methods/sort.js",
+    "filter": "node --watch ./methods/filter.js",
+    "map": "node --watch ./methods/map.js",
+    "array": "node --watch ./data-types/array.js",
     "typeof": "node --watch ./compare/typeof.js",
     "function": "node --watch ./functions/function.js",
     "nd": "node --watch ./ND/nd.js",

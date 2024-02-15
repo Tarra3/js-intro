@@ -11,9 +11,15 @@ Busimos temos:
     -logines reiksmes
     -sarasas
     -objektas
-- salygis (if)
+- salygos (if)
+    - if
+    -ternary
+    -switch
 - ciklai (for)
 - funkcijos
+    - function
+    - arrow function
+    - class
 - ivykiai (event listeners)
 
 */

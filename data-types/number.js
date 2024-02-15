@@ -3,22 +3,22 @@ NUMBERS
 
 KINTAMUJU INICIAVIMAS:
 - const (default)
--let (kai info turi buti kintama)
--var (niekada nenaudoti, nebent zinai ka darai)
+- let (kai info turi buti kintama)
+- var (niekada nenaudoti, nebent zinai ka darai)
 
 SKAICIU KATEGORIJOS:
--normalus
-    -tegiami/neigiami
-    -sveikieji/desimtainiai
--ne normalus
-    -Infinity (begalybes)
-    -NaN (not-a-number)
+- normalus
+    - tegiami/neigiami
+    - sveikieji/desimtainiai
+- ne normalus
+    - Infinity (begalybes)
+    - NaN (not-a-number)
 
 OPERATORIAI:
--priskyrimo (=)
--matematiniai:
-    -aritmetiniai: +, -, /, *, %(liekana), **(kelimas laipsniu)
-    -aritmetiniai priskyrimo: +=, -=, /=, *=, %=, **=
+- priskyrimo (=)
+- matematiniai:
+    - aritmetiniai: +, -, /, *, %(liekana), **(kelimas laipsniu)
+    - aritmetiniai priskyrimo: +=, -=, /=, *=, %=, **=
 
 */
 

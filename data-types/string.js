@@ -115,14 +115,17 @@ const HTML = `<header>
 
 console.log(HTML);
 
-const HTML2 = `<header>\r\n
-\t<img src="#" alt="">\r\n
-\t<nav>\r\n\t
-\t<a href="#">Link</a>\r\n\t
-\t<a href="#">Link</a>\r\n\t
-\t<a href="#">Link</a>\r\n\t\t<nav>\r\n
+const HTML2 = `<header>\r\n\
+\t<img src="#" alt="">\r\n\
+\t<nav>\r\n\t\
+\t<a href="#">Link</a>\r\n\t\
+\t<a href="#">Link</a>\r\n\t\
+\t<a href="#">Link</a>\r\n\
+\t<nav>\r\n\
 </header>`;
+// sita teksta tik backtikuose galima palikt, bus ok.
 console.log(HTML2);
+
 
 console.clear();
 

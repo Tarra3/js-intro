@@ -144,7 +144,10 @@ if (isFinite(NaN)) {
     } else
         console.log('ne');
 }
-
-
-
+if (amount === Infinity) {
+    return 'ERROR: skaicius negali buti Infinity';
+}
+if (isNaN(amount)) {
+    return 'ERROR: duok normalu skaiciu';
+}
 

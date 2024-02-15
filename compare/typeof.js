@@ -1,6 +1,7 @@
 /* 
 TYPEOF - duomens tipo nustatymo operatorius
 */
+
 const c = typeof true;
 console.log(c);
 

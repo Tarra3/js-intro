@@ -6,18 +6,25 @@
 
 Busimos temos:
 - duomenu tipai
-    -skaiciai
-    -tekstas
-    -logines reiksmes
-    -sarasas
-    -objektas
+    + skaiciai
+    + tekstas
+    + logines reiksmes
+    + undefined
+    - sarasas
+    - objektas
 - salygos (if)
-    - if
-    -ternary
-    -switch
+    + if
+    + ternary
+    - switch
 - ciklai (for)
+    - for
+    - while
+    - do-while
+    - for-of
+    - for-in
+    - kiti cikliski metodai
 - funkcijos
-    - function
+    + function
     - arrow function
     - class
 - ivykiai (event listeners)

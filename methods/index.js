@@ -17,7 +17,7 @@ Busimos temos:
     + ternary
     - switch
 - ciklai (for)
-    - for
+    + for
     - while
     - do-while
     - for-of

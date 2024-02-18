@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "reverse": "node --watch ./exercises/reverse.js",
     "number-sum": "node --watch ./exercises/number-sum.js",
     "for": "node --watch ./loops/for.js",
     "sort": "node --watch ./methods/sort.js",

@@ -1,6 +1,7 @@
 /*
 FOR - ciklas (pagrindinis)
 */
+// `use strict`; 
 
 let a = 0;
 
@@ -38,3 +39,12 @@ for (let i = 0; i < marks.length; i++) {
     sum += marks[i];
 }
 console.log('SUM:', sum, sum / marks.length);
+
+console.clear();
+
+
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+

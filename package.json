@@ -5,6 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "methods:string2": "node --watch ./methods/string2.js",
     "animals": "node --watch ./class/index.js",
     "class": "node --watch ./functions/class.js",
     "remove-negative": "node --watch ./exercises/remove-negative.js",

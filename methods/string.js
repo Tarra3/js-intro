@@ -45,7 +45,7 @@ const surname4 = 'Onaite';
 // Vardo "Jonas" ilgis yra 5 simboliai.
 // Asmens Jonas Jonaitis inicialai yra J.J.
 
-// const ilgis33 = `Vardo "${name1}" ilgis yra ${name1.length} simboliai.`;
+const ilgis33 = `Vardo "${name1}" ilgis yra ${name1.length} simboliai.`;
 console.log(ilgis33);
 
 const inicialai = `Asmens ${name1} ${surname1} inicialai yra name1[0]. surname1[0].`;
@@ -68,3 +68,6 @@ console.log(ilgis34);
 
 const inicialai4 = `Asmens ${name4} ${surname4} inicialai yra O.O.`;
 console.log(inicialai4);
+
+
+

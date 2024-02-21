@@ -11,16 +11,17 @@ Busimos temos:
     + logines reiksmes
     + undefined
     + sarasas
-    - objektas
+    + objektas
+    - null
 - salygos (if)
     + if
     + ternary
     - switch
 - ciklai (for)
     + for
-    - while
-    - do-while
-    - for-of
+    + while
+    - do-while (nepanaudojamas praktiskai)
+    + for-of
     - for-in
     - kiti cikliski metodai
 - funkcijos

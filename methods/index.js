@@ -20,14 +20,14 @@ Busimos temos:
 - ciklai (for)
     + for
     + while
-    - do-while (nepanaudojamas praktiskai)
+      do-while (nepanaudojamas praktiskai)
     + for-of
-    - for-in
+    + for-in
     - kiti cikliski metodai
 - funkcijos
     + function
     - arrow function
-    - class
+    + class
 - ivykiai (event listeners)
 
 */

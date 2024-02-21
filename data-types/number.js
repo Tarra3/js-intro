@@ -180,7 +180,7 @@ console.log(i);
 i += 7;        // vietoj '= i +' lieka '+='
 console.log(i);
 
-i++;
+i++;            // didina vienu vnt.
 console.log(i); // 22
 
 i++;

@@ -7,9 +7,10 @@
   "scripts": {
     "animals": "node --watch ./class/index.js",
     "class": "node --watch ./functions/class.js",
+    "remove-negative": "node --watch ./exercises/remove-negative.js",
     "for-in": "node --watch ./loops/for-in.js",
-    "while": "node --watch ./loops/while.js",
     "for-of": "node --watch ./loops/for-of.js",
+    "while": "node --watch ./loops/while.js",
     "object": "node --watch ./data-types/object.js",
     "reverse": "node --watch ./exercises/reverse.js",
     "number-sum": "node --watch ./exercises/number-sum.js",

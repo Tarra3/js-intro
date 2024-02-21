@@ -1,8 +1,13 @@
 {
   "name": "js-intro",
   "version": "1.0.0",
+  "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
+    "animals": "node --watch ./class/index.js",
+    "class": "node --watch ./functions/class.js",
+    "for-of": "node --watch ./loops/for-of.js",
     "object": "node --watch ./data-types/object.js",
     "reverse": "node --watch ./exercises/reverse.js",
     "number-sum": "node --watch ./exercises/number-sum.js",

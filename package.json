@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-   "biggest": "node --watch ./exercises/biggest.js",
+    "methods:array": "node --watch ./methods/array.js",
+    "biggest": "node --watch ./exercises/biggest.js",
     "sum-interval": "node --watch ./exercises/sum-interval.js",
     "number-name": "node --watch ./exercises/number-name.js",
     "methods:string2": "node --watch ./methods/string2.js",

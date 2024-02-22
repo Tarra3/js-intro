@@ -3,7 +3,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 */
 
 /*
-.push() / .unshift() / .pop() / .shift / .at() / .concat / 
+.push() / .unshift() / .pop() / .shift / .at() / .concat / .includes / 
+.indexOf / .join  / .reverse /  .slice / 
 */
 
 // istraukia nurodyra nari:
@@ -143,7 +144,6 @@ console.log(trysVienasDuXXX);  //-> [3, 3, 3, 5, 1,1, 1, 7, 2, 2,2, 9]
 
 
 
-
 //string:
 // console.log('asdasd' + 'dsadsa'); // -> asdasddsadsa
 // masyvas:
@@ -151,3 +151,69 @@ console.log(trysVienasDuXXX);  //-> [3, 3, 3, 5, 1,1, 1, 7, 2, 2,2, 9]
 // console.log([111] + [222]);       // -> 111222 kaip teksta logina
 // console.log([111, 333] + [222, 44]);    // -> 111, 333222, 44
 
+console.clear();
+
+
+
+//ar turi masyve ar ne 
+console.log([10, 2, 8, 4, 6].includes(5));  //-> false (nera '5' masyve)
+console.log([10, 2, 8, 4, 6].includes(8));  //-> true
+console.log([10, 2, 8, 4, 6].includes(10)); //-> true
+console.log([10, 2, 8, 4, 6].includes(2));  //-> true
+
+console.log([10, 2, 8, 4, 6].indexOf(5));  //-> -1 (visais atvejais grazina kai neranda masyve)
+console.log([10, 2, 8, 4, 6].indexOf(8));  //-> 2
+console.log([10, 2, 8, 4, 6].indexOf(10)); //-> 0
+console.log([10, 2, 8, 4, 6].indexOf(2));  //-> 1
+
+console.clear();
+
+
+//.join -stringai, su sk -nelogiska-
+const john = ['j', 'jay', 'jail'];
+console.log(john);         //-> [ 'j', 'jay', 'jail' ]
+console.log(john.join());   //-> j,jay,jail
+console.log(john.join(''));  //->  jjayjail (salyga:sujunk neiterpiant nieko)
+console.log(john.join(', '));  //-> j, jay, jail
+console.log(john.join('- '));   //-> j - jay - jail
+console.log(john.join('-=- '));   //->j -= - jay-=- jail
+
+console.clear();
+
+
+// reverse:
+const abc = ['a', 'b', 'c', 'd'];   //-> ['a', 'b', 'c', 'd']
+console.log(abc);
+
+abc.reverse();      //->  ['d', 'c', 'b', 'a']
+console.log(abc);
+//2kart reversint grazins pradine reiksme:
+abc.reverse();      //->  [ 'a', 'b', 'c', 'd' ]
+console.log(abc);
+
+//             0      1        2         3           4
+const ona = ['suo', 'kate', 'papuga', 'ziurkenas', 'sinsila'];
+console.log(ona.slice());   //-> ['suo', 'kate', 'papuga', 'ziurkenas', 'sinsila']
+console.log(ona.slice(2));  //-> ['papuga', 'ziurkenas', 'sinsila']
+// nes papuga - index 2, ziurkenas - 3. iki nepaimant: 
+console.log(ona.slice(2, 3)); //-> ['papuga']
+console.log(ona.slice(1, -1)); //-> ['kate', 'papuga', 'ziurkenas']
+
+//UZD1:
+// duodamas tekstas, kuris turetu buti kaip vardas.
+// bet jis suformatuotas padrikai..
+// reikia duota teksta suformatuoti taip, jog butu tvarkingas vardas:
+
+// pvz.: jonas -> Jonas
+// pvz.: oNa -> Ona
+// pvz.: PeTrAs -> Petras
+// pvz.: Maryte -> Maryte
+
+// stringe +array metodai
+
+
+//UZD2:
+//duodamas vardas ir pavarde, grazinti trumpini:
+
+//pvz.: Chuck Norris -> C.N.
+// funkcijos turi buti

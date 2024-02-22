@@ -24,3 +24,11 @@ const g = typeof typeof true;
 // const g = typeof 'boolean';
 // const g = 'string';
 console.log(g);
+
+
+if (typeof limin !== 'number') {
+    console.log('err');
+
+} else {
+    console.log('ok');
+}

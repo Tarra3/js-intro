@@ -19,6 +19,7 @@ Animal (name, color), intro():
             - bringBabies(): Zmones i kopustu lauka atnesiau dar viena vaika ({{babiesCount}})
 
     - Fish (name, color), intro(), swim(), stopSwim():
+    this.sound = '';
         - Shark (name, color), intro(), swim(), stopSwim(), eatHuman()
             - eatHuman() Kaip noreciau paragauti plaukmenu...
         - Goldfish (name, color, wishLimit?), intro(), swim(), stopSwim(), makeWish()
@@ -30,4 +31,11 @@ Animal (name, color), intro():
         - Dophin (name, color), intro(), swim(), stopSwim(), jumpFromWater()
             - jumpCount
             - jumpFromWater() Delfinas issoko is vandens {{jumpCount}}-a karta
-*/
+
+Papildomi reikalavimai: sukodinti animal
+- naminiai gyvunai {{sound}} kartoja 2 kartus
+- vandens gyvunai {{sound}} kartoja 0 kartu
+- pauksciai {{sound}} kartoja 3 kartus
+
+
+            */

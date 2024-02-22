@@ -17,9 +17,12 @@ export default dog;
 
 
 //variantas 2:
-// export default class dog;
+// export default class dog{
+//    ir cia info,
+//}
 
 // pirma versija:
 //intro() {
 //    return `${this.name}: Hi, I am ${this.color} dog. ${this.sound}.`;
 //}
+

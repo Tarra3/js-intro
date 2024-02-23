@@ -217,3 +217,7 @@ console.log(ona.slice(1, -1)); //-> ['kate', 'papuga', 'ziurkenas']
 
 //pvz.: Chuck Norris -> C.N.
 // funkcijos turi buti
+// atsakymai exercises: name-format
+
+
+

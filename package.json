@@ -5,6 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "hof": "node --watch ./functions/hof.js",
     "name-format": "node --watch ./exercises/name-format.js",
     "methods:array": "node --watch ./methods/array.js",
     "biggest": "node --watch ./exercises/biggest.js",

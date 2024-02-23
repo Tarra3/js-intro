@@ -1,3 +1,4 @@
+
 const abc = ['a', 'b', 'c', 'z', 'f', 's'];
 abc.sort();
 abc.sort().reverse();
@@ -22,14 +23,45 @@ const students = [
 // reikia apskaiciuoti kiekvieno studento pazymiu kieki ir tai prideti kaip
 // nauja studento objekto rakta (marksCount);
 
+for (const student of students) {
+    student.marksCount = student.marks.length;
+}
+
+
 // reikia apskaiciuoti kiekvieno studento pazymiu vidurki ir tai prideti kaip
 // nauja studento objekto rakta (marksAvarage);
+
+for (const student of students) {
+    let sum = 0;
+
+    for (const mark of student.marks) {
+        sum += mark;
+    }
+
+    student.marksAverage = sum / student.marks.length;
+}
 
 // reikia rasti kiekvieno studento maziausia pazymi  ir tai prideti kaip
 // nauja studento objekto rakta (minMark);
 
+for (const student of students) {
+    const marksCopy = [];
+    for (const mark of student.marks) {
+        marksCopy.push(mark);
+    }
+
+    marksCopy.sort((a, b) => a - b);
+    student.minMark = marksCopy[0];
+}
+
 // reikia rasti kiekvieno studento didziausia pazymi ir tai prideti kaip
 // nauja studento objekto rakta (maxMark);
+
+for (const student of students) {
+    student.maxMark = Math.max(...student.marks);
+}
+console.log(students[0]);
+
 
 // reikia sudaryti studentu sarasa (pilni objektai), kuriu pazymiu vidurkis yra
 //didesnis uz 5.

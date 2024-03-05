@@ -38,4 +38,4 @@ Papildomi reikalavimai: sukodinti animal
 - pauksciai {{sound}} kartoja 3 kartus
 
 
-            */
+*/

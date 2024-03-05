@@ -18,8 +18,8 @@ function removeNegative(list) {
     return result;
 }
 
-console.log(removeNegative(a1));
-console.log(removeNegative(a2));
-console.log(removeNegative(a3));
+console.log(removeNegative(a1)); // ->30
+console.log(removeNegative(a2)); // -> 20
+console.log(removeNegative(a3)); // ->0
 
 

@@ -10,7 +10,7 @@ for (let i = 0; i <= 4; i++) {
     console.log(i, sum);
 }
 
-console.log('SUM:', sum);
+console.log('SUM:', sum);  // SUM: 10
 
 console.log(`----------------nauja 0-100-----`);
 
@@ -20,7 +20,7 @@ for (let i = 0; i <= 100; i++) {
     sum2 += i;
 }
 
-console.log(`SUM2:`, sum2);
+console.log(`SUM2:`, sum2);  // SUM2: 5050
 
 // gali buti: (lengviau keisti kintamuosius)
 const min = 0;
@@ -44,9 +44,9 @@ function sumBetween(min, max) {
     return sum3;
 }
 
-console.log(sumBetween(0, 4));
-console.log(sumBetween(0, 10));
-console.log(sumBetween(13, 15));
+console.log(sumBetween(0, 4)); // 10
+console.log(sumBetween(0, 10)); // 55
+console.log(sumBetween(13, 15)); // 42 
 
 
 // sakinys: Sum between 0 and 4 is 10.
@@ -71,6 +71,9 @@ console.log(sumBetween1(0, 10_000));
 // console.log(sumBetween1(0, 1000_000_000)); //neteisinga ir ilgai
 
 console.log(`gera-------------------------`);
+// naudot formule (n + (n+1)/2)  pav. 
+// todel tik vieno kintamojo reikia. t.y. max: 
+
 function correctBetween(max) {
     return (max * (max + 1)) / 2;
 

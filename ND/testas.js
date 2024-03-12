@@ -46,7 +46,7 @@ console.log(Math.floor(Math.random() * (9 - 100 + 1)) + 100);
 
 
 */
-
+/*
 const delfinai = [96, 108, 89];
 const koalos = [88, 91, 110];
 
@@ -80,7 +80,138 @@ function plotas(a, b) {
     return (a * b);
 }
 console.log(plotas(2, 3));
-
+*/
 ////
+
+console.log(`---------------f-jos-----------`)
+
+//1.
+// const x = vardas(`Chuck Noris`)
+// function vardas(name) {
+//     return `Labas, ${name}!`;
+// }
+// console.log(x);
+
+
+//2.
+
+// function sum(a, b) {
+//     return a + b;
+// };
+// console.log(sum(5, 2));
+
+
+//3.
+// const marks = [3, 5, 7, 9];
+// let sum = 0;
+//
+// for (let i = 0; i < marks.length; i++) {
+//     sum += marks[i];
+// }
+// console.log(`SUMA:`, sum);
+
+//4.
+function biggest(list) {
+
+    if (!Array.isArray(list)) {
+        return 'ERROR: duok masyva';
+    }
+    if (list.length === 0) {
+        return 'ERROR: tuscias masyvas';
+    }
+
+    let biggestNumber = -Infinity;
+
+    for (const number of list) {
+        if (typeof number !== 'number' || !isFinite(number)) {
+            continue;
+        }
+        if (number > biggestNumber) {
+            biggestNumber = number;
+        }
+    }
+
+    if (biggestNumber === -Infinity) {
+        return 'ERROR: masyve nerasta nei vieno normalaus skaiciaus';
+    }
+    return biggestNumber;
+}
+
+console.log(biggest([3, 5, -7, 99]));
+
+
+
+//5. length
+function length(tekstas) {
+    return tekstas.length;
+}
+console.log(length(`zodis chuck`));
+
+
+//6.  
+
+//7. 
+
+
+//8.
+function reverse(text) {
+    let result = '';
+    for (let i = text.length - 1; i >= 0; i--) {
+        result += text[i];
+    }
+    return result;
+}
+console.log(reverse('triufelis'));
+
+//9.
+
+//10. 
+function lyginis(number) {
+    if (number % 2 === 0) {
+        return true;
+    }
+    return false;
+}
+
+console.log(lyginis(4));
+
+// budas.2: const even = (number) => number % 2 === 0; 
+
+//11.
+function replace(text, count) {
+    let result = '';
+    for (let i = 0; i < count; i++) {
+        result += text;
+    }
+    return result;
+}
+console.log('vasara'.replace('a', '1'));
+
+//12. 
+function faren(tempa) {
+    return (tempa * 1.8) + 32;
+}
+console.log(faren(30));
+
+//13.
+
+//131.
+
+//14. 
+
+
+//15. 
+
+
+//16.
+
+//17.
+
+
+//18. 
+function amzius(year, year1) {
+    return (year - year1);
+}
+console.log(amzius(2024, 1992));
 
 

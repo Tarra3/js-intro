@@ -70,6 +70,7 @@ console.log(x7);
 const x8 = labas('Maryte');
 console.log(x8);
 
+/*
 function dvygubai(number) {
     return number * 2;
 }
@@ -150,4 +151,4 @@ if (amount === Infinity) {
 if (isNaN(amount)) {
     return 'ERROR: duok normalu skaiciu';
 }
-
+*/

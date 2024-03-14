@@ -83,34 +83,52 @@ console.log(plotas(2, 3));
 */
 ////
 
-console.log(`---------------f-jos-----------`)
+/*console.log(`---------------f-jos-----------`)
 
-//1.
-// const x = vardas(`Chuck Noris`)
-// function vardas(name) {
-//     return `Labas, ${name}!`;
-// }
-// console.log(x);
+//1.Parašykite funkciją, kuri priima vartotojo vardą kaip argumentą ir grąžina
+// pasveikinimo žinutę.
+const x = vardas(`Chuck Noris`)
+function vardas(name) {
+    return `Labas, ${name}!`;
+}
+console.log(x);
+//1.1 
+function greeting(name) {
+    return `Hello, ${name}!`
+}
+console.log(greeting(`Popo`));
 
-
-//2.
+//2.Sukurkite funkciją, kuri priima du skaičius kaip argumentus ir grąžina jų sumą.
 
 // function sum(a, b) {
 //     return a + b;
-// };
+// }
 // console.log(sum(5, 2));
 
 
-//3.
-// const marks = [3, 5, 7, 9];
-// let sum = 0;
-//
-// for (let i = 0; i < marks.length; i++) {
-//     sum += marks[i];
-// }
-// console.log(`SUMA:`, sum);
+//3.Parašykite funkciją, kuri priima masyvą kaip argumentą ir grąžina visų masyvo elementų sumą.
 
-//4.
+const marks = [3, 5, 7, 9];
+let sum = 0;
+
+for (let i = 0; i < marks.length; i++) {
+    sum += marks[i];
+}
+console.log(`SUMA:`, sum);
+
+//3.1
+function sumArray(array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+    return sum;
+}
+console.log(sumArray([3, 5, 7, 9]));
+
+
+//4.Sukurkite funkciją, kuri priima masyvą skaičių ir grąžina didžiausią skaičių masyve.
+
 function biggest(list) {
 
     if (!Array.isArray(list)) {
@@ -139,21 +157,49 @@ function biggest(list) {
 
 console.log(biggest([3, 5, -7, 99]));
 
+//4.1 
+function findMaxArray(array) {
+    return Math.max(...array);
+}
+console.log(findMaxArray([3, 5, -7, 101]));
 
 
-//5. length
+//5. Parašykite funkciją, kuri priima tekstą kaip argumentą ir grąžina to teksto ilgį.
 function length(tekstas) {
     return tekstas.length;
 }
 console.log(length(`zodis chuck`));
 
 
-//6.  
+//6.  Sukurkite funkciją, kuri priima skaičių ir grąžina jo faktorialą.
 
-//7. 
+function factiorialNum(number) {
+    for (let i = number - 1; i >= 1; i--) {
+        number = number * i;
+    }
+    return number;
+}
+console.log(factiorialNum(5)); //-> 120
 
 
-//8.
+//7. Parašykite funkciją, kuri priima masyvą skaičių ir skaičių kaip argumentus,
+//o grąžina naują masyvą, kuriame yra tik tie skaičiai, kurie didesni už pateiktą skaičių.
+
+function filterArray(array, arg) {
+    let result = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] >= arg) {
+            result.push(array[i]);
+        }
+    }
+    return result;
+}
+console.log(filterArray([1, 5, 10, 15, 20], 6)); //-> [10, 15, 20]
+
+
+
+//8. Sukurkite funkciją, kuri priima tekstą kaip argumentą ir grąžina jį atvirkštine tvarka.
+
 function reverse(text) {
     let result = '';
     for (let i = text.length - 1; i >= 0; i--) {
@@ -163,9 +209,27 @@ function reverse(text) {
 }
 console.log(reverse('triufelis'));
 
-//9.
+//8.1 
+function reverseString(text) {
+    return text.split('').reverse().join('');
+}
+console.log(reverseString('triufelis'));
 
-//10. 
+//9. Parašykite funkciją, kuri nustato, ar pateiktas tekstas yra palindromas.
+
+function palindromeChecker(text) {
+    const reversedText = text.split('').reverse().join('');
+    if (text === reversedText) {
+        return true;
+    }
+    return false;
+}
+console.log(palindromeChecker('boga'));
+
+
+//10. Sukurkite funkciją, kuri priima skaičių ir grąžina true, jei skaičius yra
+// lyginis, ir false, jei skaičius yra nelyginis.
+
 function lyginis(number) {
     if (number % 2 === 0) {
         return true;
@@ -175,9 +239,12 @@ function lyginis(number) {
 
 console.log(lyginis(4));
 
-// budas.2: const even = (number) => number % 2 === 0; 
+// budas 10.2:  const even = (number) => number % 2 === 0;
 
-//11.
+
+//11. Parašykite funkciją, kuri priima tekstą ir dvi eilutes: pakeistiną
+//simbolį ir pakeitimo simbolį. Funkcija grąžina naują tekstą su pakeistais simboliais.
+
 function replace(text, count) {
     let result = '';
     for (let i = 0; i < count; i++) {
@@ -185,33 +252,215 @@ function replace(text, count) {
     }
     return result;
 }
-console.log('vasara'.replace('a', '1'));
+console.log('vasara'.replace('a', '1')); //-> v1sara
 
-//12. 
+//11.1
+function modifyString(string, a, b) {
+    return string.toLowerCase().replaceAll(a, b)
+}
+console.log(modifyString('Vasara', 'a', '1')); //-> v1s1r1
+
+
+
+//12. Sukurkite funkciją, kuri priima temperatūrą Celsijaus laipsniais ir konvertuoja ją į Farenheito laipsnius.
 function faren(tempa) {
     return (tempa * 1.8) + 32;
 }
 console.log(faren(30));
 
-//13.
+//13.Parašykite funkciją, kuri priima masyvą ir grąžina naują masyvą be dublikatų.
 
-//131.
+// function multipleArrays(a, b, c) {
+//     const duplicates = a.filter(i => b.includes(i) && c.includes(i));
+//     return duplicates;
+// }
+// console.log(multipleArrays([a, m, a, r, m, a]));
 
-//14. 
+function removeDuplicates(array) {
+    let filtered = [];
+    for (let i = 0; i < array.length; i++) {
+        if (!filtered.includes(array[i])) {
+            filtered.push(array[i]);
+        }
+    }
+    return filtered;
+}
+console.log(removeDuplicates([2, 5, 5, 3, 3, 9, 9, 9, 7])); //-> [ 2, 5, 3, 9, 7 ]
+
+//131. Sukurkite funkciją, kuri priima skaičių ir grąžina true, jei skaičius yra pirminis, ir false, jei ne.
+
+function isPrimeNumber(number) {
+    const sqrt = Math.sqrt(number);
+    if (number < 2) {
+        return false;
+    }
+    for (let i = 2; i <= sqrt; i++) {
+        if (number % i === 0) {
+            return false
+        }
+    }
+    return true;
+}
+console.log(isPrimeNumber(7)); //-> true
 
 
-//15. 
+//14.   Parašykite funkciją, kuri priima masyvą skaičių ir grąžina jį surikiuotą mažėjančia tvarka.
+
+function sortArray(array) {
+    return array.sort((a, b) => b - a);
+}
+console.log(sortArray([1, 5, 10, 15, 20]));
 
 
-//16.
+//15. Sukurkite funkciją, kuri priima du skaičius kaip pradžios ir pabaigos
+// intervalo ribas ir grąžina visų skaičių, esančių tame intervale, sumą
 
-//17.
+function sumInBetween(c, d) {
+    let result = 0;
+    for (let i = c; i <= d; i++) {
+        result += i;
+    }
+    return result
+}
+console.log(sumInBetween(3, 6)); //-> 18
 
 
-//18. 
+//17. Parašykite funkciją, kuri priima tekstą ir grąžina jį, pakeisdamas kiekvieną raidę į sekantį raidę abėcėlėje.
+
+function replaceNextLetter(text) {
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    const s = text.toLowerCase();
+    let result = '';
+    for (let i = 0; i < s.length; i++) {
+        if (/[a-z]/.test(s[i])) {
+            let index = alphabet.indexOf(s[i]);
+            let nextIndex = (index + 1) % alphabet.length;
+
+            result += alphabet[nextIndex];
+        }
+    }
+    return result;
+}
+console.log(replaceNextLetter('majonezas')); //-> nbkpofabt
+
+
+//18. Sukurkite funkciją, kuri priima gimimo metus ir grąžina asmenio amžių.
 function amzius(year, year1) {
     return (year - year1);
 }
 console.log(amzius(2024, 1992));
+//18.1
+function amzius1(year) {
+    return 2024 - year;
+}
+console.log(amzius1(1992));
 
 
+// 19. Parašykite funkciją, kuri priima tekstą ir simbolį, o grąžina, kiek kartų tas simbolis pasikartoja tekste.
+function charCounter(text, char) {
+    let count = 0;
+    for (let i = 0; i < text.length; i++) {
+        if (text[i] === char) {
+            count++;
+        }
+    }
+    return count;
+}
+console.log(charCounter('cocccco', 'c')); //-> 5 (c raides)
+
+
+
+//20. Parašykite funkciją, kuri priima kelių masyvų sąrašą ir grąžina naują masyvą,
+// kuris sudarytas tik iš tų elementų, kurie pasikartoja visuose pradiniuose masyvuose.
+
+function multipleArrays(a, b, c) {
+    const duplicates = a.filter(i => b.includes(i) && c.includes(i));
+    return duplicates;
+}
+console.log(multipleArrays([1, 2, 3, 4], [4, 5, 6], [4, 8, 7])); //->[ 4 ] 
+
+*/
+
+console.log(`---------------objektai-------------`)
+
+
+//1.
+const book = {
+    'name': 'Mažasis princas',
+    'author': 'Antuano de Sent',
+    'year': 1943,
+}
+console.log(book['name']);
+console.log(book['author']);
+console.log(book['year']);
+// Mažasis princas
+// Antuano de Sent
+// 1943
+
+//2.
+const vardai = [
+    { name: 'Coco', age: 101 },
+    { name: 'Fofo', age: 4 },
+    { name: 'Dodo', age: 55 },
+];
+
+for (const vardas of vardai) {
+    console.log(`${vardas.name}: ${vardas.age}`);
+}
+//Coco: 101
+//Fofo: 4
+//Dodo: 55
+
+//3.************************************
+// const prekes = [
+//     {name: 'duona', price: 4, cat: 'bakaleja' },
+//     {name: 'agurkas', price: 2, cat: 'darzove' },
+//     { name: 'silke', price: 6, cat: 'zuvis' },
+// ]
+// for
+
+
+//4. ******************************
+
+//5.
+const moto = {
+    brand: 'kawasaki',
+    model: 'ninja',
+    color: 'green',
+    price: 2000,
+}
+for (const key in moto) {
+    const value = moto[key];
+    console.log(key, value);
+}
+
+//6.
+const marks = [5, 3, 4, 10];
+let sum = 0;
+for (let i = 0; i < marks.length; i++) {
+    sum += marks[i];
+}
+console.log('SUM:', sum)
+
+//7.
+function findMax(array) {
+    return Math.max(...array);
+}
+console.log(findMax([3, 5, -10, 101]));
+
+//8. (pagal 5 moto:)
+const keysCount = Object.keys(moto).length;
+console.log(keysCount);
+
+//9.
+const vardai1 = [
+    { name: 'Coco', age: 101 },
+    { name: 'Fofo', age: 4 },
+    { name: 'Dodo', age: 55 },
+];
+const vardas1 = vardai1
+    .filter(v => v.age > 18);
+console.log(vardas1);
+
+
+//10.

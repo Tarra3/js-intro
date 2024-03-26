@@ -186,4 +186,3 @@ console.log(randomString);
 
 console.log(`******************objektai.plius*********************`);
 
-function
